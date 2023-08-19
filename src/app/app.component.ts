@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { APP_IMPORTS } from '@common/imports';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,6 @@ import { APP_IMPORTS } from '@common/imports';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {}
+export class AppComponent {
+  title = environment.BASE_URL;
+}
